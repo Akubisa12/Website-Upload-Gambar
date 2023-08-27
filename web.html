@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Gambar</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="file-upload">
+    <button class="file-upload-add" onclick="$('.file-upload-input').trigger('click')" type="button">Add Image</button>
+
+    <div class="image-upload-wrap">
+      <input type="file" class="file-upload-input" onchange="readURL(this);" accept="image/*">
+      <div class="drag-text">
+        <h3>Drag and drop file or select add Image</h3>
+      </div>
+    </div>
+
+    <div class="file-upload-content">
+      <img src="#" alt="Image" class="file-upload-image">
+      <div class="image-title-wrap">
+        <button type="button" onclick="removeUpload()" class="remove-image">remove
+          <span class="image-title">Upload</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
